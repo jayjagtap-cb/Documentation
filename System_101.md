@@ -11,7 +11,7 @@ cbs_release resevation_hash
 ```
 ssh root@system9 
 cs software show 
-Note:( software 0.0.0 is the master software)<br/>  
+Note:( software 0.0.0 is the master software)
 cs system show   
  ```
  
