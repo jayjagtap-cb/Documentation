@@ -1,17 +1,17 @@
-# Reserving a system
-module load cbscheduler 
-cbs_show system9 or cbs_lres to show all systems 
-cbs_schedule -g "Goal of reservation" system9 04:00 
-cbs_extend reservation_hash 02:00 
-cbs_release resevation_hash 
+# Reserving a system<br /> 
+module load cbscheduler<br/>    
+cbs_show system9 or cbs_lres to show all systems<br/>  
+cbs_schedule -g "Goal of reservation" system9 04:00<br/>  
+cbs_extend reservation_hash 02:00 <br/> 
+cbs_release resevation_hash <br/> 
  
-# Checking system software and state 
-ssh root@system9 
-cs software show 
-Note:( software 0.0.0 is the master software) 
-cs system show  
+# Checking system software and state <br/> 
+ssh root@system9 <br/> 
+cs software show <br/> 
+Note:( software 0.0.0 is the master software)<br/>  
+cs system show <br/>  
  
-# Install the system with latest master 
+# Install the system with latest master<br /> 
 cs1_install -s system9 -w default -b latest  
  
 # Log into system's cm 
