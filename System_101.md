@@ -19,6 +19,14 @@ cs system show
 ```
 cs1_install -s system9 -w default -b latest  
  ```
+# Install latest release branch build
+```
+cs1_install -s system9 -w rel-0.7.0 -b latest
+```
+# Install release branch and particular build
+```
+cs1_install -s system9 -w rel-0.7.0 -b build_no
+```
 # Log into system's cm
 ```
 ssh root@system9
