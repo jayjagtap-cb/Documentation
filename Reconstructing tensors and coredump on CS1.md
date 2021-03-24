@@ -24,7 +24,7 @@ cs_load_plan --cmaddr 10.254.91.192:9000 --finalize --planmeta cs_eb534058d88bb5
 cs_stream_driver --planmeta cs_eb534058d88bb5b3e4192df3f96ebd0bba346de4b38a3757c65f8b15c7cce726/plan.meta --cmaddr 10.254.91.192:9000 --auto --send --data 
 init/streams.npz --steps 16 --offset 0
 ```
-#receieve data
+# receieve data
 ```
 cs_stream_receiver --cmaddr 10.254.91.192:9000 --planmeta cs_eb534058d88bb5b3e4192df3f96ebd0bba346de4b38a3757c65f8b15c7cce726/plan.meta --out_dir ./test --block_size 16 --steps 1
 ```
