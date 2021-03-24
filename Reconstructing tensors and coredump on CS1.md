@@ -37,7 +37,7 @@ cs_debug -c checkpoint --cmaddr 10.254.47.224:9000 --planmeta cs_c5a07b7a9b9f116
 cs_debug -c config --checkpoint ./core_exp_stall.ckpt --dump_exceptions --output ./exceptions --planmeta ./cs_c5a07b7a9b9f1161c34955a920c94b748b917159f3261936bbbaaff80b65a447/plan.meta --redirect ./exceptions.log
 ```
 
-Monitor mode on CS1
+# Monitor mode on CS1
 ```
 cs_numerical_debug --session test_session10 --init --input cs_eb534058d88bb5b3e4192df3f96ebd0bba346de4b38a3757c65f8b15c7cce726 --cmaddr 10.254.91.192:9000
 cs_numerical_debug --session test_session10 --start_monitor
