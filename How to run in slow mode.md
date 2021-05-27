@@ -1,15 +1,12 @@
 1. Add this to config
 ```
-
-2. config.plangen.address_map = True
+config.plangen.address_map = True
 ```
-
-3. Optional but preferred
+2. Optional but preferred
 ```
 --cifparam config.plangen.emit_plan_file=True
 ```
-
-Finally enable cifparam for HW exception flow to run in slow mode
+3. Finally enable cifparam for HW exception flow to run in slow mode
 ```
 --cifparam debug.debug_hw_exception=True
 ```
