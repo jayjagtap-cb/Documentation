@@ -51,3 +51,7 @@ df_tensor_reconstruct -d test_session10 -o reconstructed_tensors
 ```
 cs_debug -c checkpoint --cmaddr 10.254.91.192:9000 --planmeta cs_eb534058d88bb5b3e4192df3f96ebd0bba346de4b38a3757c65f8b15c7cce726/plan.meta --checkpoint cs_eb534058d88bb5b3e4192df3f96ebd0bba346de4b38a3757c65f8b15c7cce726/core_stall.ckpt
 ```
+# Unmask a exception
+```
+cs_debug -c exceptiondebug --exceptions oflow,invld,div_z --planmeta cs_c5a07b7a9b9f1161c34955a920c94b748b917159f3261936bbbaaff80b65a447/plan.meta --cmaddr 10.254.47.224:9000
+```
