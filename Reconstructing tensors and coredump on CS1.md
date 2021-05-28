@@ -55,3 +55,7 @@ cs_debug -c checkpoint --cmaddr 10.254.91.192:9000 --planmeta cs_eb534058d88bb5b
 ```
 cs_debug -c exceptiondebug --exceptions oflow,invld,div_z --planmeta cs_c5a07b7a9b9f1161c34955a920c94b748b917159f3261936bbbaaff80b65a447/plan.meta --cmaddr 10.254.47.224:9000
 ```
+# Symbol dump for a layer
+```
+cs_debug -c --detailed --checkpoint nan_core.ckpt --planmeta model_dir/cs_2d88c0633676ae0515bbfd403cc4687fa81df323ab4cad4a4b1801aeb02cab75/plan.meta --layer  layer_norm1 >  layer_norm1.symbols
+```
