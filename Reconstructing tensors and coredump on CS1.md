@@ -61,7 +61,7 @@ cs_debug -c data --detailed --checkpoint nan_core.ckpt --planmeta model_dir/cs_2
 ```
 # Config dump for a layer
 ```
-cs_debug -c config --detailed --checkpoint nan_core.ckpt --planmeta model_dir/cs_2d88c0633676ae0515bbfd403cc4687fa81df323ab4cad4a4b1801aeb02cab75/plan.meta --layer  layer_norm1 >  layer_norm1.symbols
+cs_debug -c config --detailed --checkpoint nan_core.ckpt --planmeta model_dir/cs_2d88c0633676ae0515bbfd403cc4687fa81df323ab4cad4a4b1801aeb02cab75/plan.meta --layer  layer_norm1 >  layer_norm1.config
 ```
 # To get symbol dump in T_F16
 ```
