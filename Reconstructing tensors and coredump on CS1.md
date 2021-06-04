@@ -57,7 +57,11 @@ cs_debug -c exceptiondebug --exceptions oflow,invld,div_z --planmeta cs_c5a07b7a
 ```
 # Symbol dump for a layer
 ```
-cs_debug -c --detailed --checkpoint nan_core.ckpt --planmeta model_dir/cs_2d88c0633676ae0515bbfd403cc4687fa81df323ab4cad4a4b1801aeb02cab75/plan.meta --layer  layer_norm1 >  layer_norm1.symbols
+cs_debug -c data --detailed --checkpoint nan_core.ckpt --planmeta model_dir/cs_2d88c0633676ae0515bbfd403cc4687fa81df323ab4cad4a4b1801aeb02cab75/plan.meta --layer  layer_norm1 >  layer_norm1.symbols
+```
+# Config dump for a layer
+```
+cs_debug -c config --detailed --checkpoint nan_core.ckpt --planmeta model_dir/cs_2d88c0633676ae0515bbfd403cc4687fa81df323ab4cad4a4b1801aeb02cab75/plan.meta --layer  layer_norm1 >  layer_norm1.symbols
 ```
 # To get symbol dump in T_F16
 ```
