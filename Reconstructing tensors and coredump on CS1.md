@@ -49,7 +49,7 @@ df_tensor_reconstruct -d test_session10 -o reconstructed_tensors
 ```
 # take checkpoint
 ```
-cs_debug -c checkpoint --cmaddr 10.254.91.192:9000 --planmeta cs_eb534058d88bb5b3e4192df3f96ebd0bba346de4b38a3757c65f8b15c7cce726/plan.meta --checkpoint cs_eb534058d88bb5b3e4192df3f96ebd0bba346de4b38a3757c65f8b15c7cce726/core_stall.ckpt
+cs_debug -c checkpoint --cmaddr 10.254.91.192:9000 --planmeta cs_eb534058d88bb5b3e4192df3f96ebd0bba346de4b38a3757c65f8b15c7cce726/plan.meta --checkpoint nan.ckpt
 ```
 # Unmask a exception
 ```
