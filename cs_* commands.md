@@ -68,3 +68,11 @@ cs_debug -c config --detailed --checkpoint nan_core.ckpt --planmeta model_dir/cs
 previous_cmd --type _T_F16
 Other options can be seen with --help
 ```
+# Procedure to verify elf load
+```
+cd to compile_dir
+singularity shell <sif>
+cs_load_plan --cmaddr <cmaddr> --init --load --planmeta plan.meta
+cs_debug -c checkpoint --planmeta plan.meta --checkpoint core_init.ckpt --cmaddr <cmaddr>
+cs_debug -c verify_elf_load --checkpoint core_init.ckpt --planmeta plan.meta
+```
