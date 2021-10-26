@@ -1,0 +1,14 @@
+How to enable ws landing logs and instruction trace
+
+diff --git a/src/ws/stack/ws-run/run.sh b/src/ws/stack/ws-run/run.sh
+index 463a7f2..cdafe07 100755
+--- a/src/ws/stack/ws-run/run.sh
++++ b/src/ws/stack/ws-run/run.sh
+@@ -88,6 +88,7 @@ if [ "$DROP" != "1" ]; then
+                 ccolor=${COLOR_IN_C} icolor=${COLOR_IN_W} iacolor=${COLOR_IN_A} \
+                 ocolor=${COLOR_EG_G} oacolor=${COLOR_EG_A} \
+                 inject="chirp period=${CHIRP}" \
++                debug="inst_trace,landing" \
+                 > bench-sim.log 2> bench-sim-err.log \
+                 & TIMEOUT_PID=$! && sleep 1 && ps -o pid= --ppid "$TIMEOUT_PID" \
+                 > sim_pid
