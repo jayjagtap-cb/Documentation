@@ -12,5 +12,5 @@ cbrun -t gpu -- sbatch -p gpu -C v100 -c 8 run.sh
 ```
 ```
 #!/usr/bin/bash
-~william/ws/miniconda3/envs/tf2/bin/python run.py --params configs/params_gat_qm9.yaml  --mode train_and_eval --model_dir /net/jayj-dev/srv/nfs/jayj-data/ws/comparisons/lrelu_fix_for_0/model_dir
+~william/ws/conda/envs/tf//bin/python run.py --params configs/params_gat_qm9.yaml  --mode train_and_eval --model_dir /net/jayj-dev/srv/nfs/jayj-data/ws/comparisons/lrelu_fix_for_0/model_dir
 ```
