@@ -16,5 +16,5 @@ cbrun -t gpu -- sbatch -p gpu -C v100 -c 8 run.sh
 ```
 
 ```
-cbrun -t gpu -- srun -p gpu -C v100  ~william/ws/conda/envs/tf//bin/python run.py -p /net/ribhu-dev/srv/nfs/ribhu-data/ws/ws2/simulate/tests/ws/test_018_transformers/model_params/gpt2_small.yaml -v small_64k -o small -m train
+cbrun -t gpu -- srun -p gpu -C v100  ~william/ws/conda/envs/tf//bin/python run.py -p /net/jayj-dev/srv/nfs/jayj-data/ws/MONOLITHS/mnist_activation/monolith/tests/ws/test_018_transformers/model_params/gpt2_mini.yaml  -v mini_no_dp_ls -o mini_no_dp_ls_32kvocab -m train
 ```
