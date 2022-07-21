@@ -1,6 +1,11 @@
+Source Environment
+```
+source /cb/home/eugene/ws/venv/setup_venv.sh
+```
+
 V100
 ```
-cbrun -t gpu -- sbatch -c 8 -C v100-spot run.sh
+cbrun -t gpu -- sbatch -p v100-spot run.sh
 ```
 g4
 ```
