@@ -15,6 +15,10 @@ V100 on-demand
 ```
 cbrun -t gpu -- sbatch -p gpu -C v100 -c 8 run.sh
 ```
+To run sbatch with 4 v100
+```
+cbrun -t gpu -- sbatch  -p v100x4 -c 32 run.sh
+```
 ```
 #!/usr/bin/bash
 ~william/ws/conda/envs/tf//bin/python run.py --params configs/params_gat_qm9.yaml  --mode train_and_eval --model_dir /net/jayj-dev/srv/nfs/jayj-data/ws/comparisons/lrelu_fix_for_0/model_dir
