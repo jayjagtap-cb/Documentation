@@ -14,10 +14,11 @@ cbrun -t gpu -- sbatch -p gpu -C g4dn.xlarge -c 4 run.sh
 V100 on-demand
 ```
 cbrun -t gpu -- sbatch -p gpu -C v100 -c 8 run.sh
+
+```
 Reserve from 2b cluster
 ```
 cbrun -t gpu-2b -- srun --pty -p v100 -C p3.2xlarge -c 8 --time 4:00:00 bash
-```
 ```
 To run sbatch with 4 v100
 ```
