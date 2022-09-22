@@ -17,7 +17,9 @@ cs system show
  
 # Install the system with latest master
 ```
-cs1_install -s system9 -w default -b latest  
+cs1_install -s system9 -w default -b latest
+cs1_install -s <system> -w default --release-stable
+cs1_install -s <system> -w rel-1.6.0ease-stable
  ```
 # Install latest release branch build
 ```
