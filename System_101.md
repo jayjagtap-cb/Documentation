@@ -41,3 +41,11 @@ cs system standby
 cs system activate 
 ```
 
+# Change system execution mode
+```
+1. cs system standby ->
+2. cs config execmode setup ,enter ->
+3. choose pipeline/weight streaming ->
+4. cs system activate
+```
+
