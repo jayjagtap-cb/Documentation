@@ -2,15 +2,15 @@ Steps to inspect Cerebras Pytorch weights
 
 ```
 python-pt
->>> import cerebras_pytorch as cbtorch
->>> state_dict = cbtorch.load("./model_dir/checkpoint_1.mdl")
->>> state_dict.keys()
+import cerebras_pytorch as cbtorch
+state_dict = cbtorch.load("./model_dir/checkpoint_1.mdl")
+state_dict.keys()
 dict_keys(['model', 'optimizer', 'amp', 'global_step'])
->>> state_dict['model'].keys()
+state_dict['model'].keys()
 odict_keys(['fc_layers.0.weight', 'last_layer.weight'])
->>> type(state_dict['model']['fc_layers.0.weight'])
+type(state_dict['model']['fc_layers.0.weight'])
 <class 'torch.Tensor'>
->>> w = state_dict['model']['fc_layers.0.weight']
->>> w.isfinite().sum()/w.numel()
+w = state_dict['model']['fc_layers.0.weight']
+w.isfinite().sum()/w.numel()
 tensor(0.6000)
 ```
